@@ -12,8 +12,8 @@ class Avaliacao_Desempenho_Nine_box {
         this.quadrante = quadrante;
     }
     // métodos da avaliação
-    apresentação(): string {
-        return (`\nOlá ${this.cargo} ${this.usuario}, seja bem vindo a avaliação desempenho Nine Box: `)
+    apresentação(): void {
+        console.log(`\nOlá ${this.cargo} ${this.usuario}, seja bem vindo a avaliação desempenho Nine Box: `)
     }
     exibicao_quadrantes(): void {
         console.log(`\nAbaixo temos os possíveis quadrantes da avaliação de desempenho modelo nine box:\n`)
@@ -206,7 +206,7 @@ class Avaliacao_Desempenho_Nine_box {
     quadrante_(): void {
         // Definir qual quadrante o usuario deverá ser direcionado com base na pontuação
     }
-    feedback_user(): void {
+    feedback_for_user(): void {
         // Mensagem a ser enviada para o usuario após a finalização da avaliação
     }
 
@@ -218,4 +218,4 @@ matheus.exibicao_quadrantes();
 matheus.perguntas();
 matheus.pontuacao_perguntas();
 matheus.quadrante_(); // falta codar
-matheus.feedback_user();// falta codar
+matheus.feedback_for_user();// falta codar
